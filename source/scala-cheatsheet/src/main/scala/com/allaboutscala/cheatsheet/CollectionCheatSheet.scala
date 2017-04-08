@@ -5,7 +5,7 @@ package com.allaboutscala.cheatsheet
   *
   *  Code snippets for Scala Cheatsheet
   *
-  * [[http://allaboutscala.com/scala-cheatsheet/]]
+  * [http://allaboutscala.com/scala-cheatsheet/]
   *
   * Copyright 2016 Nadim Bahadoor (http://allaboutscala.com)
   *
