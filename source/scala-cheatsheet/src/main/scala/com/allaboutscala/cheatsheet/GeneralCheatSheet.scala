@@ -1,5 +1,7 @@
 package com.allaboutscala.cheatsheet
 
+import scala.io.Source
+
 /**
   * Created by Nadim Bahadoor on 08/04/2017.
   *
@@ -23,19 +25,13 @@ package com.allaboutscala.cheatsheet
   */
 object GeneralCheatSheet extends App{
 
-  /**
-    * Add line break or separator for given platform
-    *
-    */
+  /** Add line break or separator for given platform **/
   val lineBreak = scala.compat.Platform.EOL
   println(s"First line $lineBreak second line")
 
 
 
-  /**
-    * Convert multi-line string to single line
-    *
-    */
+  /** Convert multi-line string to single line **/
   // Step 1: Define an implicit class to strip out line endings
   implicit class StringConversion(str: String) {
 
@@ -55,9 +51,33 @@ object GeneralCheatSheet extends App{
 
 
 
-  /**
-    * Check the value of an Option
-    */
+  /** Check the value of an Option **/
   Some(5).contains(5)
+
+
+
+  /** Function to read a file and return a String of its contents **/
+  def readFile(file: String): String = {
+    Source
+      .fromInputStream(getClass.getResourceAsStream(file))
+      .getLines
+      .mkString("\n")
+  }
+
+
+
+  /** Create enum using sealed trait **/
+  sealed trait Donut
+  case object Vanilla extends Donut
+  case object Chocolate extends Donut
+  case object Plain extends Donut
+
+  def isValidDonut(donut: Donut) = {
+    donut match {
+      case Vanilla | Chocolate | Plain => println("Valid donut")
+      case _ => println("Unknown donut!")
+    }
+  }
+
 
 }
