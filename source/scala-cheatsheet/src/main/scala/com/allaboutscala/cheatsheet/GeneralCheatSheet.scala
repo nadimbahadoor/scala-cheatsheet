@@ -30,7 +30,6 @@ object GeneralCheatSheet extends App{
   println(s"First line $lineBreak second line")
 
 
-
   /** Convert multi-line string to single line **/
   // Step 1: Define an implicit class to strip out line endings
   implicit class StringConversion(str: String) {
@@ -45,15 +44,11 @@ object GeneralCheatSheet extends App{
       |Plain Donut
       |Vanilla Donut
     """.stripMargin
-
-
     println(s"Multi-line as single line = ${multilineStr.inline()}")
-
 
 
   /** Check the value of an Option **/
   Some(5).contains(5)
-
 
 
   /** Function to read a file and return a String of its contents **/
@@ -63,7 +58,6 @@ object GeneralCheatSheet extends App{
       .getLines
       .mkString("\n")
   }
-
 
 
   /** Create enum using sealed trait **/
@@ -78,6 +72,13 @@ object GeneralCheatSheet extends App{
       case _ => println("Unknown donut!")
     }
   }
+
+
+  /** Int division in Scala and return a float which keeps the decimal values: **/
+  val donutQuantity: Int = 10
+  val donutTotalCost: Int = 25
+  val donutPrice = donutTotalCost.toFloat / donutQuantity
+  println(s"Cost of one donut = $donutPrice")
 
 
 }
