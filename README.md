@@ -14,7 +14,13 @@ At www.allaboutscala.com, we provide a complete beginner's tutorial to help you 
 
 Stay in touch via [Facebook](http://www.facebook.com/allaboutscala) and [Twitter](https://twitter.com/NadimBahadoor) for upcoming tutorials!
 
-## Cheatsheet and Scala Test
+## ScalaTest and Cheatsheet
+# ScalaTest
+- [Introduction](http://allaboutscala.com/scala-cheatsheet/#scalatest-introduction)
+- [Add ScalaTest as dependency to build.sbt](http://allaboutscala.com/scala-cheatsheet/#add-scalatest-dependency-build.sbt)
+- [Create a test class using FlatSpec and Matchers](http://allaboutscala.com/scala-cheatsheet/#test-class-flatspec-matchers)
+- [Equality Test](http://allaboutscala.com/scala-cheatsheet/#scalatest-equality)
+
 # Collection
 - [Convert Java collection](http://allaboutscala.com/scala-cheatsheet/#convert-java-collection-to-scala)
 
