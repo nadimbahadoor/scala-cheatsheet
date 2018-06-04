@@ -20,6 +20,7 @@ Stay in touch via [Facebook](http://www.facebook.com/allaboutscala) and [Twitter
 - [Add ScalaTest as dependency to build.sbt](http://allaboutscala.com/scala-cheatsheet/#add-scalatest-dependency-build.sbt)
 - [Create a test class using FlatSpec and Matchers](http://allaboutscala.com/scala-cheatsheet/#test-class-flatspec-matchers)
 - [Equality Test](http://allaboutscala.com/scala-cheatsheet/#scalatest-equality)
+- [Length Test](http://allaboutscala.com/scala-cheatsheet/#scalatest-length)
 
 # Collection
 - [Convert Java collection](http://allaboutscala.com/scala-cheatsheet/#convert-java-collection-to-scala)
