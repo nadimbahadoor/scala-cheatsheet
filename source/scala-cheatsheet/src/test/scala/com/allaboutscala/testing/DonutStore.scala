@@ -1,7 +1,5 @@
 package com.allaboutscala.testing
 
-import org.scalatest.{FlatSpec, Matchers}
-
 /**
   * Created by Nadim Bahadoor on 08/04/2017.
   *
@@ -23,19 +21,10 @@ import org.scalatest.{FlatSpec, Matchers}
   * License for the specific language governing permissions and limitations under
   * the License.
   */
-class Tutorial_02_Equality_Test extends FlatSpec with Matchers {
+class DonutStore {
 
-  behavior of "DonutStore class"
+  def favouriteDonut(): String = "vanilla donut"
 
-  "favourite donut" should "match vanilla donut" in {
-    val donutStore = new DonutStore()
-    donutStore.favouriteDonut() shouldEqual "vanilla donut"
-    donutStore.favouriteDonut() === "vanilla donut"
-    donutStore.favouriteDonut() should not equal "plain donut"
-    donutStore.favouriteDonut() should not be "plain donut"
-    donutStore.favouriteDonut() !== "Plain donut"
-  }
+  def donuts(): Seq[String] = Seq("vanilla donut", "plain donut", "glazed donut")
 
 }
-
-

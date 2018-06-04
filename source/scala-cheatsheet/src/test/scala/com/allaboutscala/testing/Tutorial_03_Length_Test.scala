@@ -1,6 +1,6 @@
 package com.allaboutscala.testing
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.{Matchers, FlatSpec}
 
 /**
   * Created by Nadim Bahadoor on 08/04/2017.
@@ -23,19 +23,12 @@ import org.scalatest.{FlatSpec, Matchers}
   * License for the specific language governing permissions and limitations under
   * the License.
   */
-class Tutorial_02_Equality_Test extends FlatSpec with Matchers {
+class Tutorial_03_Length_Test extends FlatSpec with Matchers {
 
-  behavior of "DonutStore class"
-
-  "favourite donut" should "match vanilla donut" in {
+  "Length and size of donuts" should "be equal to 3" in {
     val donutStore = new DonutStore()
-    donutStore.favouriteDonut() shouldEqual "vanilla donut"
-    donutStore.favouriteDonut() === "vanilla donut"
-    donutStore.favouriteDonut() should not equal "plain donut"
-    donutStore.favouriteDonut() should not be "plain donut"
-    donutStore.favouriteDonut() !== "Plain donut"
+    val donuts = donutStore.donuts()
+    donuts should have size 3
+    donuts should have length 3
   }
-
 }
-
-
