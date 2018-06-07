@@ -23,6 +23,7 @@ Stay in touch via [Facebook](http://www.facebook.com/allaboutscala) and [Twitter
 - [Length Test](http://allaboutscala.com/scala-cheatsheet/#scalatest-length)
 - [Boolean Test](http://allaboutscala.com/scala-cheatsheet/#scalatest-boolean)
 - [Collection Test](http://allaboutscala.com/scala-cheatsheet/#scalatest-collection)
+- [Type Test](http://allaboutscala.com/scala-cheatsheet/#scalatest-type)
 
 # Collection
 - [Convert Java collection](http://allaboutscala.com/scala-cheatsheet/#convert-java-collection-to-scala)
