@@ -1,5 +1,7 @@
 package com.allaboutscala.testing
 
+import scala.concurrent.Future
+
 /**
   * Created by Nadim Bahadoor on 08/04/2017.
   *
@@ -48,5 +50,11 @@ class DonutStore {
       "glazed donut"  -> 0.3
     )
     discounts.getOrElse(donut, 0)
+  }
+
+  import scala.concurrent.ExecutionContext.Implicits.global
+  def donutSalesTax(donut: String): Future[Double] = Future {
+    Thread.sleep(3000)  // assume an external call to calculate sales tax
+    0.15
   }
 }
