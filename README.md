@@ -26,6 +26,7 @@ Stay in touch via [Facebook](http://www.facebook.com/allaboutscala) and [Twitter
 - [Type Test](http://allaboutscala.com/scala-cheatsheet/#scalatest-type)
 - [Exception Test](http://allaboutscala.com/scala-cheatsheet/#scalatest-exception)
 - [Private Method Test](http://allaboutscala.com/scala-cheatsheet/#scalatest-private-method)
+- [Future Method Test](http://allaboutscala.com/scala-cheatsheet/#scalatest-future)
 
 # Collection
 - [Convert Java collection](http://allaboutscala.com/scala-cheatsheet/#convert-java-collection-to-scala)
